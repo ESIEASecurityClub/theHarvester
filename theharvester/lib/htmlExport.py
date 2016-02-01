@@ -1,5 +1,5 @@
-from lib import markup
-from lib import graphs
+from theharvester.lib import markup
+from theharvester.lib import graphs
 import re
 
 

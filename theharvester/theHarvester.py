@@ -14,9 +14,9 @@ except:
     print "Request library not found, please install it before proceeding\n"
     sys.exit()
 
-from discovery import *
-from lib import htmlExport
-from lib import hostchecker
+from theharvester.discovery import *
+from theharvester.lib import htmlExport
+from theharvester.lib import hostchecker
 
 print "\n*******************************************************************"
 print "*                                                                 *"
@@ -60,7 +60,8 @@ def usage():
     print "        " + comm + " -d apple.com -b googleCSE -l 500 -s 300\n"
 
 
-def start(argv):
+def start():
+    argv = sys.argv[1:]
     if len(sys.argv) < 4:
         usage()
         sys.exit()
