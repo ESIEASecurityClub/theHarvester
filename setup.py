@@ -38,6 +38,6 @@ setup(
     tests_require=test_requirements,
     entry_points="""
     [console_scripts]
-    theharvester=theharvester.theharvester:start
+    theharvester=theharvester.theHarvester:start
     """
 )
